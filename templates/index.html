@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dataset Viewer</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='styles/style.css') }}"
+    />
+  </head>
+  <body>
+    <h3 style="margin-left: 15px">Import Products</h3>
+    <div class="row1">
+      <div class="left-box">
+        <div class="step1" col-md-6>
+          <p>Step 1: &emsp; &emsp; Select file</p>
+          <input type="file" name="file" />
+          <p>Supported File Type(s) : .CSV, .JSON</p>
+        </div>
+      </div>
+      <div class="right-box">
+        <div class="step2" col-md-6>
+          <p>Step 2: &emsp; &emsp; Specify Format</p>
+          <div class="inner-content">
+            <label for="format">File Type</label>
+            <select class="dropdown" name="format" id="format">
+              <option>csv</option>
+              <option>JSON</option></select
+            ><br />
+            <label for="encoding">Character Encoding</label>
+            <select class="dropdown" name="encoding" id="format">
+              <option>UTF-8</option>
+              <option>UTF-16</option>
+              <option>UTF-32</option></select
+            ><br />
+            <label for="format">Delimiter</label>
+            <select class="dropdown" name="format" id="format">
+              <option>Comma</option>
+              <option>Tab</option>
+              <option>Semicolon</option>
+              <option>Vertical bars</option></select
+            ><br />
+            <input type="checkbox" id="header" name="header" />
+            <label for="header">Has Header</label><br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row2">
+      <div class="step3" col-md-12>
+        <h4>Step 3: &emsp; &emsp; Display Handling</h4>
+        <br />
+        Select the fields to be displayed<br />
+      </div>
+    </div>
+    <div class="form-buttons">
+      <button class="next">Next</button>
+      <button class="cancel">Cancel</button>
+    </div>
+  </body>
+</html>

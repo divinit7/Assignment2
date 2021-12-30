@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+.left-box,
+.right-box,
+.row2 {
+  margin: 20px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.row1 {
+  display: flex;
+  height: 50%;
+}
+
+.left-box,
+.right-box {
+  width: 50%;
+  height: 250px;
+}
+
+.row2 {
+  height: 250px;
+}
+
+.step1 {
+  padding-top: 20px;
+}
+
+.step1,
+.step2 {
+  padding-left: 50px;
+}
+
+.next,
+.cancel {
+  width: 70px;
+  height: 35px;
+  color: white;
+  background-color: rgb(53, 153, 6);
+}
+.cancel {
+  color: black;
+  background-color: white;
+  border-color: white;
+}
+
+.inner-content {
+  padding-left: 30px;
+}
+
+.dropdown {
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+
+.form-buttons {
+  padding-left: 87.5%;
+}
